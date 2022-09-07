@@ -5,7 +5,7 @@ const deps = require("./package.json").dependencies;
 module.exports = {
   devtool: "source-map",
   output: {
-    publicPath: "http://localhost:8083/",
+    publicPath: "auto",
   },
 
   resolve: {
@@ -46,9 +46,11 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         componentsLibrary:
-        "components_library@http://localhost:8080/remoteEntry.js",
-        ApplicationA: "applicationA@http://localhost:8081/remoteEntry.js",
-        ApplicationB: "applicationB@http://localhost:8082/remoteEntry.js",
+          "components_library@https://components-library-git-develop-dev-mauricioab.vercel.app/remoteEntry.js",
+        ApplicationA:
+          "applicationA@https://application-a-git-main-dev-mauricioab.vercel.app/remoteEntry.js",
+        ApplicationB:
+          "applicationB@https://application-b-git-develop-dev-mauricioab.vercel.app/remoteEntry.js",
       },
       exposes: {},
       shared: {
@@ -68,7 +70,7 @@ module.exports = {
       },
     }),
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./public/index.html",
     }),
   ],
 };
