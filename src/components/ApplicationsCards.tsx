@@ -52,14 +52,14 @@ export const ApplicationsCards: React.FC = () => {
             <div className="px-6 pt-4 pb-2">
               <span
                 className="
-    inline-block 
-    bg-gray-200 
-    rounded-full
-    px-3 py-1
-    text-sm 
-    font-semibold 
-    text-gray-700 
-    mr-2 mb-2"
+                  inline-block 
+                  bg-gray-200 
+                  rounded-full
+                  px-3 py-1
+                  text-sm 
+                  font-semibold 
+                  text-gray-700 
+                  mr-2 mb-2"
               >
                 #laia
               </span>
@@ -67,7 +67,7 @@ export const ApplicationsCards: React.FC = () => {
           </div>
         ))}
 
-        <Footer />
+        <Footer title="Footer in common-workspace" />
       </div>
     </>
   );
