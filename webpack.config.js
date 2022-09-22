@@ -47,11 +47,11 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         componentsLibrary:
-          "components_library@https://components-library-git-develop-dev-mauricioab.vercel.app/remoteEntry.js",
+          "components_library@https://components-library.vercel.app/remoteEntry.js",
         ApplicationA:
-          "applicationA@https://application-a-git-main-dev-mauricioab.vercel.app/remoteEntry.js",
+          "applicationA@https://application-a.vercel.app/remoteEntry.js",
         ApplicationB:
-          "applicationB@https://application-b-git-develop-dev-mauricioab.vercel.app/remoteEntry.js",
+          "applicationB@https://application-b.vercel.app/remoteEntry.js",
       },
       exposes: {},
       shared: {
