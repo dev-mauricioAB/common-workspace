@@ -47,7 +47,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         componentsLibrary:
-          "components_library@https://components-library-react.vercel.app//remoteEntry.js",
+          "components_library@https://components-library-react.vercel.app/remoteEntry.js",
         ApplicationA:
           "applicationA@https://application-a.vercel.app/remoteEntry.js",
         ApplicationB:
